@@ -10,7 +10,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 0px 20px;
     border-bottom: 1px solid #ddd;
   }
   
@@ -81,4 +81,32 @@ body {
   .btn-sponsor:hover {
     background-color: #cfb447;
   }
-  
+  /* Reset padrão */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 80%;
+}
+
+/* Contêiner da Imagem */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Ocupa a altura total da tela */
+  background: url('img/escolacrianças.png') no-repeat center center/cover;
+}
+
+/* Texto sobre a Imagem */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 3px 3px 4px rgba(12, 192, 223, 1);
+  padding: 10px;
+  max-width: 90%; /* Para manter o texto responsivo */
+}
