@@ -1,0 +1,84 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 200px;
+    margin-right: 10px;
+  }
+  
+
+  /* Menu */
+  .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 20px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #0cc0df;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Botões */
+  .buttons {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .btn-donate {
+    background-color: #ffde59;
+    color: #ffffff;
+  }
+  
+  .btn-donate:hover {
+    background-color: #cfb447;
+  }
+  
+  .btn-sponsor {
+    background-color: #ffde59;
+    color: #fff;
+  }
+  
+  .btn-sponsor:hover {
+    background-color: #cfb447;
+  }
+  
