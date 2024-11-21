@@ -6,6 +6,35 @@
     <title> Cadastro | Projeto Magia</title>
 </head>
 <body>
-    
+    <h1>CADASTRE SUA CRIANÇA!</h1>
+    <h2>SOBRE OS PAIS:</h2>
+    <form  autocomplete="off" method="POST">
+    <label for="name">Nome completo (Responsavel pela Inscrição)</label>
+    <input id="name" name="name" type="text" required>
+    <label for="email">Gmail (Reponsavel pela Insrição)</label>
+    <input id="email" id="email" type="text" required>
+    <label for="vinculo">Qual seu vínculo com a criança?</label>
+<fieldset> 
+<label for="resp">Responsável legal(mãe/pai)</label>
+    <input type="checkbox" name="resp" id="resp"> 
+<label for="resp-others">Outros</label>
+<input type="checkbox" name="resp-others" id="resp-others"> 
+</fieldset>
+
+<h2>SOBRE A CRIANÇA:</h2>
+<label for="name">Nome completo da criança</label>
+<input id="name-child" name="name-child" type="text" required>
+<label for="birthday">Data de nascimento</label>
+<input id="birthday" name="birthday" type="date" required>
+
+<label for="rg">RG da criança</label>
+<input id="rg" name="rg" type="text" required>
+<label for="CPF">CPF da criança:</label>
+<input id="name-child" name="name-child" type="text" required>
+
+<h2>Anexe o CPF, RG ou CERTIDÃO DE NASCIMENTO</h2>
+<label for="photo-rg">RG da criança</label>
+<input id="photo-rg" name="photo-rg" type="file" required>
+</form>
 </body>
 </html>
