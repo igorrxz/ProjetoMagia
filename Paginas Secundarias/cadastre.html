@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +7,81 @@
 </head>
 <body>
     <h1>CADASTRE SUA CRIANÇA!</h1>
-    <h2>SOBRE OS PAIS:</h2>
-    <form  autocomplete="off" method="POST">
+    <h2>SOBRE OS PAIS</h2>
+    <form autocomplete="off" method="POST">
     <label for="name">Nome completo (Responsavel pela Inscrição)</label>
     <input id="name" name="name" type="text" required>
+
     <label for="email">Gmail (Reponsavel pela Insrição)</label>
     <input id="email" id="email" type="text" required>
-    <label for="vinculo">Qual seu vínculo com a criança?</label>
-<fieldset> 
-<label for="resp">Responsável legal(mãe/pai)</label>
-    <input type="checkbox" name="resp" id="resp"> 
-<label for="resp-others">Outros</label>
-<input type="checkbox" name="resp-others" id="resp-others"> 
-</fieldset>
+
+    <label for="parent-rg">Insira o seu RG</label>
+    <input id="parent-rg" name="parent-rg" id="parent-rg" type="text" required>
+
+    <label for="parent-cpf">Insira o seu CPF</label>
+    <input id="parent-cpf" name="parent-cpf" id="parent-cpf" type="text" maxlength="11" minlength="11" required>
+
+    <label for="parent-document">Documento do responsável (CPF, RG ou CNH)</label>
+    <input id="parent-document" name="parent-document" id="parent-document" type="file" required>
+
 
 <h2>SOBRE A CRIANÇA:</h2>
-<label for="name">Nome completo da criança</label>
+<label for="name-child">Nome completo da criança</label>
 <input id="name-child" name="name-child" type="text" required>
+
 <label for="birthday">Data de nascimento</label>
 <input id="birthday" name="birthday" type="date" required>
 
 <label for="rg">RG da criança</label>
 <input id="rg" name="rg" type="text" required>
-<label for="CPF">CPF da criança:</label>
-<input id="name-child" name="name-child" type="text" required>
 
-<h2>Anexe o CPF, RG ou CERTIDÃO DE NASCIMENTO</h2>
+<label for="CPF">CPF da criança:</label>
+<input id="CPF" name="CPF" type="text" required>
+
+<h2>Anexe o CPF ou RG da criança</h2>
 <label for="photo-rg">RG da criança</label>
 <input id="photo-rg" name="photo-rg" type="file" required>
+
+<label for="photo-rg">CPF da criança</label>
+<input id="photo-cpf" name="photo-cpf" type="file" required>
+
+<h2>DADOS CADASTRAIS DA FAMÍLIA</h2>
+    <label for="adress">Endereco</label>
+    <input id="adress" name="adress" type="text" required>
+
+    <label for="adress-number">Numero</label>
+    <input id="adress-number" id="adress-number" type="number" required>
+
+    <label for="complement">Complemento</label>
+    <input id="complement" name="complement" id="complement" type="text" required>
+
+    <label for="neighborhood">Bairro</label>
+    <input id="neighborhood" name="neighborhood" type="text" required>
+
+    <label for="CEP">CEP</label>
+    <input id="CEP" name="CEP" type="text" required maxlength="8" required>
+   
+    <fieldset>
+        <legend>Renda Familiar Mensal</legend>
+    <input type="radio" id="nosalary"> <label for="nosalary">Sem renda</label>
+    <input type="radio" id="1salary"><label for="1salary">Até 1 salário mínimo</label>
+    <input type="radio" id="1-3-salary"><label for="1-3-salary">De 1 a 3 salário mínimos</label>
+    <input type="radio" id="3-6-salaries"><label for="3-6-salaries">De 3 a 6 salários mínimos</label>
+    <input type="radio" id="6-above"><label for="6-above">De 6 ou mais salários mínimos</label>
+    </fieldset>
+
+    <label for="present">Insira aqui o presente desejado pela criança!</label>
+    <input id="present" type="text">
+
+    <fieldset>
+        <legend>Autorizações</legend>
+        <input type="checkbox" id="agree">
+        <label for="agree">Aceito que o time da Projeto Magia entre em contato por e-mail ou telefone para coleta de mais informações.</label>    
+    </fieldset>
+ 
+    <button type="submit">Enviar</button>
 </form>
+
+
 </body>
 </html>
