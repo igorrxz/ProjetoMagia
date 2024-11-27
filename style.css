@@ -319,9 +319,12 @@ ul li {
   .btn-sponsor {
     margin-bottom: 30px;
   }
+
+  .card {
+    margin-bottom: 60px;
+  }
 }
 
-/* Ajuste para telas acima de 768px */
 /* Ajuste para telas acima de 768px */
 @media (min-width: 768px) {
   .navbar {
@@ -381,5 +384,9 @@ ul li {
 
   .btn {
     margin-right: 50px;
+  }
+
+  .card {
+    margin-bottom: 60px;
   }
 }

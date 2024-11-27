@@ -16,7 +16,7 @@
       <li><a href="index.html">INÍCIO</a></li>
       <li><a href="Paginas Secundarias/cadastre.html">CADASTRE SUA CRIANÇA</a></li>
       <li><a href="Paginas Secundarias/queroAjudar.html">QUERO AJUDAR</a></li>
-      <li><a href="Paginas Secundarias/quemSomos.html">QUEM SOMOS</a></li>
+      <li><a href="#quem-somos">QUEM SOMOS</a></li>
       <li><a href="Paginas Secundarias/oqueFazemos.html">OQUE FAZEMOS</a></li>
     </ul>
     <div class="buttons">
@@ -53,7 +53,7 @@
       <button>SAIBA MAIS</button>
     </div>
   </div>
-  <div class="container">
+  <div class="container" id="quem-somos">
     <div class="content">
         <h1>QUEM SOMOS ?</h1>
         <p>O Projeto Magia é uma ONG que nasceu em 2024 com o intuito de levar amor, diversão e presentes para crianças em comunidades carentes.</p>
@@ -91,6 +91,19 @@
   hamburger.addEventListener('click', () => {
       navbar.classList.toggle('active');
   });
+  document.querySelectorAll('.menu a').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault(); // Previne o comportamento padrão
+            const targetId = this.getAttribute('href'); // Obtém o ID do destino
+            const targetElement = document.querySelector(targetId);
+
+            // Faz o scroll suave
+            window.scrollTo({
+                top: targetElement.offsetTop - 100, // Ajuste o valor de -100 para considerar a altura da navbar
+                behavior: 'smooth'
+            });
+        });
+    });
 </script>
 </body>
 </html>
