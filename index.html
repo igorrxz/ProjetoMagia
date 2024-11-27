@@ -77,5 +77,21 @@
         </ul>
     </div>
 </div>
+<button class="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+<script>
+  // Seleciona os elementos
+  const navbar = document.querySelector('.navbar');
+  const hamburger = document.querySelector('.hamburger');
+
+  // Alterna o menu ao clicar no botão hambúrguer
+  hamburger.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
+
