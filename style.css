@@ -320,9 +320,34 @@ ul li {
     margin-bottom: 30px;
   }
 
-  .card {
-    margin-bottom: 60px;
+  .cards-container {
+    display: flex;
+    flex-direction: column; /* Empilha os cards verticalmente */
+    align-items: center; /* Centraliza os cards no eixo horizontal */
+    gap: 20px; /* Espaço entre os cards */
   }
+
+  .card {
+    width: 90%; /* Faz os cards ocuparem quase toda a largura da tela */
+    margin: 0 auto; /* Centraliza os cards horizontalmente */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+    padding: 20px; /* Ajusta o espaçamento interno */
+  }
+
+  .card h2 {
+    font-size: 1.5rem; /* Ajusta o tamanho do texto do título */
+  }
+
+  .card p {
+    font-size: 1rem; /* Ajusta o tamanho do texto do parágrafo */
+  }
+
+  .card button {
+    font-size: 1rem; /* Ajusta o tamanho do texto do botão */
+    width: 100%; /* Faz os botões ocuparem toda a largura do card */
+    padding: 10px; /* Ajusta o espaçamento interno dos botões */
+  }
+
 }
 
 /* Ajuste para telas acima de 768px */
