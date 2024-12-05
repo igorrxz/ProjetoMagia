@@ -1,3 +1,96 @@
+* {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 70px;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0px 20px;
+    border-bottom: 1px solid #ddd;
+    top: 0; /* Fixa no topo da página */
+    width: 100%; /* Faz a largura da navbar ocupar 100% */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+}
+
+  
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 200px;
+    margin-right: 10px;
+  }
+  
+
+  /* Menu */
+  .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 50px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: rgb(8, 128, 150);
+    text-shadow: 3px 3px 24px rgb(119, 119, 119);
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+    color: rgb(14, 187, 218);
+  }
+  
+  /* Botões */
+  .buttons {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .btn {
+    border: none;
+    padding: 20px 50px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .btn-donate {
+    background-color: #ffde59;
+    box-shadow: 1px 1px 1px rgb(182, 182, 182);
+    text-shadow: 3px 3px 4px rgb(71, 71, 71);
+    color: #ffffff;
+  }
+  
+  .btn-donate:hover {
+    background-color: #cfb447;
+  }
+  
+  .btn-sponsor {
+    background-color: #ffde59;
+    box-shadow: 1px 1px 1px rgb(182, 182, 182);
+    text-shadow: 3px 3px 4px rgb(71, 71, 71);
+    color: #fff;
+    margin-right: 50px;
+  }
+  
+  .btn-sponsor:hover {
+    background-color: #cfb447;
+  }
 
 :root {
     --cor1: #0cc0df;
@@ -12,6 +105,7 @@ background-color: var(--cor1);
 display: flex;
 align-items: center;
 justify-content: center;
+flex-direction: column;
 }
 
 
