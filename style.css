@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 0px 20px;
     border-bottom: 1px solid #ddd;
     position: fixed; /* Torna a navbar fixa */
@@ -42,18 +42,20 @@ body {
   }
   
   .menu li {
-    margin: 0 20px;
+    margin: 0 50px;
   }
   
   .menu a {
     text-decoration: none;
-    color: #0cc0df;
+    color: rgb(8, 128, 150);
+    text-shadow: 3px 3px 24px rgb(119, 119, 119);
     font-size: 1rem;
     font-weight: bold;
   }
   
   .menu a:hover {
     text-decoration: underline;
+    color: rgb(14, 187, 218);
   }
   
   /* Botões */
@@ -64,7 +66,7 @@ body {
   
   .btn {
     border: none;
-    padding: 10px 40px;
+    padding: 20px 50px;
     border-radius: 20px;
     font-size: 0.9rem;
     cursor: pointer;
@@ -73,6 +75,8 @@ body {
   
   .btn-donate {
     background-color: #ffde59;
+    box-shadow: 1px 1px 1px rgb(182, 182, 182);
+    text-shadow: 3px 3px 4px rgb(71, 71, 71);
     color: #ffffff;
   }
   
@@ -82,6 +86,8 @@ body {
   
   .btn-sponsor {
     background-color: #ffde59;
+    box-shadow: 1px 1px 1px rgb(182, 182, 182);
+    text-shadow: 3px 3px 4px rgb(71, 71, 71);
     color: #fff;
     margin-right: 50px;
   }
@@ -114,7 +120,7 @@ body, html {
   font-size: 2.3rem;
   font-weight: bold;
   text-align: center;
-  text-shadow: 3px 3px 4px rgba(12, 192, 223, 1);
+  text-shadow: 3px 3px 4px rgb(8, 128, 150);
   padding: 10px;
   max-width: 90%; /* Para manter o texto responsivo */
 }
@@ -124,7 +130,8 @@ body, html {
   justify-content: center; /* Centraliza os cards horizontalmente */
   align-items: center; /* Centraliza os cards verticalmente */
   gap: 20px;
-  max-width: 1700px;
+  width: 100%;
+  max-width: none;
   margin: 0 auto; /* Centraliza o container na página */
   padding: 20px; /* Adiciona espaço ao redor */
 }
@@ -132,11 +139,12 @@ body, html {
 
 /* Estilo dos cards */
 .card {
-  background-color: #fff;
+  margin-top: 20px;
+  background-color: #ffffff;
   border-radius: 15px;
   padding: 30px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(255, 193, 7, 1);
+  box-shadow: 0 2px 10px rgb(8, 128, 150);
   flex: 1;
 }
 
@@ -173,4 +181,237 @@ body, html {
 
 .card button:hover {
   background-color: #0aa7bf;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  width: 100%;
+  max-width: none;
+  background-color: rgb(8, 128, 150);
+  padding: 20px;
+  border-radius: 0px;
+  color: white;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+blockquote {
+  background-color: #ffffff;
+  color: #333;
+  font-size: 18px;
+  padding: 10px;
+  margin: 30px 0;
+  border-left: 10px solid #ffcc00;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  font-size: 18px;
+
+  margin-bottom: 8px;
+}
+
+/* Estilo inicial do menu lateral oculto */
+.navbar {
+  position: fixed; /* Já está no topo */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #fff;
+  transition: transform 0.3s ease; /* Suaviza a animação de abertura/fechamento */
+}
+
+/* Esconde o menu no lado esquerdo em telas pequenas */
+.navbar.hidden {
+  transform: translateX(-100%);
+}
+
+/* Mostra o menu quando ativado */
+.navbar.active {
+  transform: translateX(0);
+}
+
+/* Estilo para o botão hambúrguer */
+.hamburger {
+  display: none; /* Ocultado por padrão */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Linhas do botão hambúrguer */
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: rgb(8, 128, 150);
+  margin: 5px 0;
+}
+
+/* Media query para telas menores que 768px */
+@media screen and (max-width: 768px) {
+  .navbar {
+      position: fixed;
+      flex-direction: column; /* Empilha itens */
+      align-items: flex-start; /* Alinha à esquerda */
+      width: 250px; /* Largura fixa do menu lateral */
+      height: 100vh; /* Ocupa a altura toda da tela */
+      border-right: 1px solid #ddd;
+      transform: translateX(-100%);
+  }
+
+  .menu {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+  }
+
+  .menu li {
+      margin: 10px 0;
+  }
+
+  .buttons {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+  }
+
+  .hamburger {
+      display: block; /* Exibe o botão em telas pequenas */
+  }
+
+  .btn {
+    padding: 20px 50px;
+    margin-right: 20px;
+  }
+
+  .btn-sponsor {
+    margin-bottom: 30px;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column; /* Empilha os cards verticalmente */
+    align-items: center; /* Centraliza os cards no eixo horizontal */
+    gap: 20px; /* Espaço entre os cards */
+  }
+
+  .card {
+    width: 90%; /* Faz os cards ocuparem quase toda a largura da tela */
+    margin: 0 auto; /* Centraliza os cards horizontalmente */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+    padding: 20px; /* Ajusta o espaçamento interno */
+  }
+
+  .card h2 {
+    font-size: 1.5rem; /* Ajusta o tamanho do texto do título */
+  }
+
+  .card p {
+    font-size: 1rem; /* Ajusta o tamanho do texto do parágrafo */
+  }
+
+  .card button {
+    font-size: 1rem; /* Ajusta o tamanho do texto do botão */
+    width: 100%; /* Faz os botões ocuparem toda a largura do card */
+    padding: 10px; /* Ajusta o espaçamento interno dos botões */
+  }
+
+}
+
+/* Ajuste para telas acima de 768px */
+@media (min-width: 768px) {
+  .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed; /* Fixa a navbar no topo */
+      top: 0;
+      width: 100%;
+      height: 18%;
+      background-color: white; /* Fundo branco */
+      padding: 10px 20px; /* Espaçamento interno */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+      z-index: 1000;
+  }
+
+  .navbar .menu {
+      display: flex;
+      flex-wrap: wrap; /* Permite quebra de linha para evitar scroll lateral */
+      justify-content: center;
+      list-style: none;
+      gap: 15px; /* Espaço entre os links */
+      margin: 0;
+      padding: 0;
+  }
+
+  .navbar .menu li a {
+      text-decoration: none;
+      font-size: 0.9rem; /* Reduz o tamanho do texto */
+      color: rgb(8, 128, 150);
+      text-shadow: 3px 3px 24px rgb(119, 119, 119);
+      padding: 5px 10px;
+      white-space: nowrap; /* Evita quebra de texto */
+  }
+
+  .menu li a:hover {
+    text-decoration: underline;
+    color: rgb(14, 187, 218);
+  }
+
+  .navbar .buttons {
+      display: flex;
+      flex-direction: column; /* Organiza os botões verticalmente */
+      gap: 10px; /* Espaço entre os botões */
+  }
+
+  .navbar .buttons .btn {
+      font-size: 0.9rem; /* Reduz o tamanho dos botões */
+      padding: 15px 15px;
+      white-space: nowrap;
+      width: auto; /* Garante que o tamanho dos botões seja ajustado ao texto */
+  }
+
+  .hamburger {
+      display: none; /* Esconde o botão hambúrguer para telas maiores */
+  }
+
+  .btn {
+    margin-right: 50px;
+  }
+
+  .card {
+    margin-bottom: 60px;
+  }
 }
