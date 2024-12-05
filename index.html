@@ -14,16 +14,10 @@
     </div>
     <ul class="menu">
       <li><a href="index.html">INÍCIO</a></li>
-      <li><a href="Paginas Secundarias/cadastre.html">CADASTRE SUA CRIANÇA</a></li>
-<<<<<<< HEAD
-      <li><a href="Paginas Secundarias/queroAjudar.html">DOAÇÕES</a></li>
+      <li><a href="cadastre.html">CADASTRE SUA CRIANÇA</a></li>
+      <li><a href="queroAjudar.html">DOAÇÕES</a></li>
       <li><a href="#quem-somos">QUEM SOMOS</a></li>
-      <li><a href="Paginas Secundarias/oqueFazemos.html">OQUE FAZEMOS</a></li>
-=======
-      <li><a href="Paginas Secundarias/queroAjudar.html">QUERO AJUDAR</a></li>
-      <li><a href="Paginas Secundarias/quemSomos.html">QUEM SOMOS</a></li>
-      <li><a href="Paginas Secundarias/oqueFazemos.html">O QUE FAZEMOS</a></li>
->>>>>>> 883806b2330b9eea29bc0d29e3338cf9bba5e443
+      <li><a href="oqueFazemos.html">AMIGOS</a></li>
     </ul>
     <div class="buttons">
       <button class="btn btn-donate">QUERO DOAR</button>
@@ -98,18 +92,22 @@
       navbar.classList.toggle('active');
   });
   document.querySelectorAll('.menu a').forEach(link => {
-        link.addEventListener('click', function (e) {
+    link.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href'); // Obtém o destino do link
+        if (targetId.startsWith('#')) { // Apenas para âncoras internas
             e.preventDefault(); // Previne o comportamento padrão
-            const targetId = this.getAttribute('href'); // Obtém o ID do destino
             const targetElement = document.querySelector(targetId);
-
-            // Faz o scroll suave
-            window.scrollTo({
-                top: targetElement.offsetTop - 100, // Ajuste o valor de -100 para considerar a altura da navbar
-                behavior: 'smooth'
-            });
-        });
+            if (targetElement) {
+                // Faz o scroll suave
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100, // Ajuste o valor de -100 para considerar a altura da navbar
+                    behavior: 'smooth'
+                });
+            }
+        }
     });
+});
+
 </script>
 </body>
 </html>
