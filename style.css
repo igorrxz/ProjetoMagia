@@ -1,9 +1,19 @@
 /* Estilos gerais */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    padding-top: 70px;
-  }
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Reset padrão */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+  
   
   /* Navbar */
   .navbar {
@@ -11,12 +21,10 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    padding: 0px 20px;
+    padding: 1rem;
     border-bottom: 1px solid #ddd;
-    position: fixed; /* Torna a navbar fixa */
     top: 0; /* Fixa no topo da página */
     width: 100%; /* Faz a largura da navbar ocupar 100% */
-    z-index: 1000; /* Garante que fique acima de outros elementos */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
 }
 
@@ -39,10 +47,13 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .menu li {
-    margin: 0 50px;
+    margin: 0 10px;
   }
   
   .menu a {
@@ -61,13 +72,14 @@ body {
   /* Botões */
   .buttons {
     display: flex;
-    gap: 25px;
+    flex-direction: column;
   }
   
   .btn {
     border: none;
-    padding: 20px 50px;
-    border-radius: 20px;
+    padding: 15px 50px;
+    margin: 15px;
+    border-radius: 80px;
     font-size: 0.9rem;
     cursor: pointer;
     font-weight: bold;
@@ -89,18 +101,12 @@ body {
     box-shadow: 1px 1px 1px rgb(182, 182, 182);
     text-shadow: 3px 3px 4px rgb(71, 71, 71);
     color: #fff;
-    margin-right: 50px;
   }
   
   .btn-sponsor:hover {
     background-color: #cfb447;
   }
-  /* Reset padrão */
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 80%;
-}
+
 
 /* Contêiner da Imagem */
 .image-container {
@@ -235,15 +241,7 @@ ul li {
 }
 
 /* Estilo inicial do menu lateral oculto */
-.navbar {
-  position: fixed; /* Já está no topo */
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  width: 100%;
-  background-color: #fff;
-  transition: transform 0.3s ease; /* Suaviza a animação de abertura/fechamento */
-}
+
 
 /* Esconde o menu no lado esquerdo em telas pequenas */
 .navbar.hidden {
@@ -289,6 +287,7 @@ ul li {
       height: 100vh; /* Ocupa a altura toda da tela */
       border-right: 1px solid #ddd;
       transform: translateX(-100%);
+      z-index: 1000;
   }
 
   .menu {
@@ -350,68 +349,3 @@ ul li {
 
 }
 
-/* Ajuste para telas acima de 768px */
-@media (min-width: 768px) {
-  .navbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: fixed; /* Fixa a navbar no topo */
-      top: 0;
-      width: 100%;
-      height: 18%;
-      background-color: white; /* Fundo branco */
-      padding: 10px 20px; /* Espaçamento interno */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
-      z-index: 1000;
-  }
-
-  .navbar .menu {
-      display: flex;
-      flex-wrap: wrap; /* Permite quebra de linha para evitar scroll lateral */
-      justify-content: center;
-      list-style: none;
-      gap: 15px; /* Espaço entre os links */
-      margin: 0;
-      padding: 0;
-  }
-
-  .navbar .menu li a { 
-      text-decoration: none;
-      font-size: 0.9rem; /* Reduz o tamanho do texto */
-      color: rgb(8, 128, 150);
-      text-shadow: 3px 3px 24px rgb(119, 119, 119);
-      padding: 5px 10px;
-      white-space: nowrap; /* Evita quebra de texto */
-  }
-
-  .menu li a:hover {
-    text-decoration: underline;
-    color: rgb(14, 187, 218);
-  }
-
-  .navbar .buttons {
-      display: flex;
-      flex-direction: column; /* Organiza os botões verticalmente */
-      gap: 10px; /* Espaço entre os botões */
-  }
-
-  .navbar .buttons .btn {
-      font-size: 0.9rem; /* Reduz o tamanho dos botões */
-      padding: 15px 15px;
-      white-space: nowrap;
-      width: auto; /* Garante que o tamanho dos botões seja ajustado ao texto */
-  }
-
-  .hamburger {
-      display: none; /* Esconde o botão hambúrguer para telas maiores */
-  }
-
-  .btn {
-    margin-right: 50px;
-  }
-  
-  .card {
-    margin-bottom: 60px;
-  }
-}
