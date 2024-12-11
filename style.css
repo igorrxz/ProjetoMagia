@@ -376,7 +376,7 @@ ul li {
       padding: 0;
   }
 
-  .navbar .menu li a {
+  .navbar .menu li a { 
       text-decoration: none;
       font-size: 0.9rem; /* Reduz o tamanho do texto */
       color: rgb(8, 128, 150);
@@ -410,7 +410,7 @@ ul li {
   .btn {
     margin-right: 50px;
   }
-
+  
   .card {
     margin-bottom: 60px;
   }
