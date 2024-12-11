@@ -1,15 +1,17 @@
-* {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    padding-top: 70px;
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
+
 /* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    padding: 0px 20px;
+    padding: 1rem;
     border-bottom: 1px solid #ddd;
     top: 0; /* Fixa no topo da página */
     width: 100%; /* Faz a largura da navbar ocupar 100% */
@@ -35,10 +37,13 @@
     display: flex;
     margin: 0;
     padding: 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .menu li {
-    margin: 0 50px;
+    margin: 0 10px;
   }
   
   .menu a {
@@ -57,13 +62,14 @@
   /* Botões */
   .buttons {
     display: flex;
-    gap: 25px;
+    flex-direction: column;
   }
   
   .btn {
     border: none;
-    padding: 20px 50px;
-    border-radius: 20px;
+    padding: 15px 50px;
+    margin: 15px;
+    border-radius: 80px;
     font-size: 0.9rem;
     cursor: pointer;
     font-weight: bold;
@@ -149,7 +155,7 @@ form {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 5px;
-    width: 1000px;
+    width: 100vh;
 
 }
 
