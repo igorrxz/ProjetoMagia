@@ -3,6 +3,10 @@ body{
     font-family: Arial, sans-serif;
    
   }
+
+  h1{
+text-align: center;
+  }
   
   .pai {
     display: flex;           
@@ -34,4 +38,15 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);  /* Sombra */
     text-align: center;     
     margin-top: 8px;    
     line-height: 1.6;    
+  }
+
+  .doe35 {
+    background-color:  #ffde59;
+    border-radius: 15%;
+
+  }
+
+  button{
+    padding: 15px 32px;    
+    background-color: ;
   }
