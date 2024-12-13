@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+   
+  }
+
+  h1{
+text-align: center;
+  }
+  
+  .pai {
+    display: flex;           
+    justify-content: center; 
+    align-items: center; 
+   
+   
+   
+  }
+  
+  .hearts {
+    display: flex;         
+    justify-content: space-around; 
+    gap: 200px; 
+    text-align: center;
+    
+  }
+  
+  .hearts img {
+    width: 100px;           
+    height: auto;    
+border-radius: 50%;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);  /* Sombra */
+
+   
+  }
+  
+  .hearts p {
+    text-align: center;     
+    margin-top: 8px;    
+    line-height: 1.6;    
+  }
+
+  .doe35 {
+    background-color:  #ffde59;
+    border-radius: 15%;
+
+  }
+
+  button{
+    padding: 15px 32px;    
+    background-color: ;
+  }
