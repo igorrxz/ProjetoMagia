@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
   <title>Início | Projeto Magia</title>
 </head>
 <body>
@@ -13,10 +14,10 @@
     </div>
     <ul class="menu">
       <li><a href="index.html">INÍCIO</a></li>
-      <li><a href="Paginas Secundarias/cadastre.html">CADASTRE SUA CRIANÇA</a></li>
-      <li><a href="Paginas Secundarias/queroAjudar.html">QUERO AJUDAR</a></li>
-      <li><a href="Paginas Secundarias/quemSomos.html">QUEM SOMOS</a></li>
-      <li><a href="Paginas Secundarias/oqueFazemos.html">O QUE FAZEMOS</a></li>
+      <li><a href="cadastre.html">CADASTRE SUA CRIANÇA</a></li>
+      <li><a href="queroAjudar.html">DOAÇÕES</a></li>
+      <li><a href="#quem-somos">QUEM SOMOS</a></li>
+      <li><a href="oqueFazemos.html">AMIGOS</a></li>
     </ul>
     <div class="buttons">
       <button class="btn btn-donate">QUERO DOAR</button>
@@ -52,5 +53,62 @@
       <button>SAIBA MAIS</button>
     </div>
   </div>
+  <div class="container" id="quem-somos">
+    <div class="content">
+        <h1>QUEM SOMOS ?</h1>
+        <p>O Projeto Magia é uma ONG que nasceu em 2024 com o intuito de levar amor, diversão e presentes para crianças em comunidades carentes.</p>
+        <p>Além dos eventos nas datas comemorativas o Projeto Magia atua no trabalho contínuo com crianças e jovens de comunidades e já planeja seu primeiro instituto.</p>
+        <p>O Projeto Magia, chega para voltar a levar diversão nas comunidades carentes, que estão esquecendo que a magia das datas comemorativas ainda existe!</p>
+        <blockquote>
+            <p>"Pequenos sonhos, grandes sorrisos. Juntos, fazemos a magia acontecer!"</p>
+        </blockquote>
+        <h2>Missão:</h2>
+        <p>Promover a integração social entre voluntários e crianças através de uma experiência inédita a fim de torná-las pessoas melhores.</p>
+        <h2>Visão:</h2>
+        <p>Ser inspiração de pessoas em todo o mundo, gerando nelas uma inquietude para transformar o mundo ao seu redor.</p>
+        <h2>Valores:</h2>
+        <ul>
+            <li>Excelência</li>
+            <li>Amor</li>
+            <li>Empatia</li>
+            <li>Ética</li>
+            <li>Respeito</li>
+            <li>Equipe</li>
+        </ul>
+    </div>
+</div>
+<button class="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+<script>
+  // Seleciona os elementos
+  const navbar = document.querySelector('.navbar');
+  const hamburger = document.querySelector('.hamburger');
+
+  // Alterna o menu ao clicar no botão hambúrguer
+  hamburger.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+  });
+  document.querySelectorAll('.menu a').forEach(link => {
+    link.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href'); // Obtém o destino do link
+        if (targetId.startsWith('#')) { // Apenas para âncoras internas
+            e.preventDefault(); // Previne o comportamento padrão
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                // Faz o scroll suave
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100, // Ajuste o valor de -100 para considerar a altura da navbar
+                    behavior: 'smooth'
+                });
+            }
+        }
+    });
+});
+
+</script>
 </body>
 </html>
+
