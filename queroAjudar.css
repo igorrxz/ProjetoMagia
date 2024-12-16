@@ -11,7 +11,7 @@ body {
 
 .banner {
     position: relative;
-    height: 400px;
+    height: 600px;
     background-image: url('/img/portrait-boy-having-fun-nature.jpg'); /* Substitua pela URL da imagem do banner */
     background-size: cover;
     background-position: center;

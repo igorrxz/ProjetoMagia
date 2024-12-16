@@ -107,7 +107,7 @@
 
 body {
 font-family: Arial, sans-serif;
-background-color: var(--cor1);
+background-color: aliceblue;
 display: flex;
 align-items: center;
 justify-content: center;

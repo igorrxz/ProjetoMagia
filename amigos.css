@@ -5,6 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; /* Centraliza o conteúdo */
+  background-color: aliceblue;
 }
 
 /* Centraliza a logo e o título */
