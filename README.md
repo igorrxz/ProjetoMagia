@@ -44,8 +44,4 @@ O site será dividido nas seguintes seções:
 1. **Cadastre uma Criança**: Se você conhece uma criança que atende aos requisitos, cadastre-a para ser apadrinhada.
 2. **Seja um Padrinho**: Apadrinhe uma criança e faça sua data comemorativa mais especial com um presente.
 
-## Licença
-
-Este projeto é licenciado sob a [Licença MIT](LICENSE).
-
 Obs: O deploy aparentemente está bugado, não puxando o css de algumas páginas.
