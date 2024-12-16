@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d4dffc;
+}
+
+.banner {
+    position: relative;
+    height: 400px;
+    background-image: url('/img/portrait-boy-having-fun-nature.jpg'); /* Substitua pela URL da imagem do banner */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+}
+
+.box {
+    background-color: #007bff;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+.box1 {
+    background-color: #6cb0f8;
+}
+
+.box2 {
+    background-color: #419dff;
+}
+
+.box3 {
+    background-color: #1d88fa;
+}
+
+.box h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.box p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.box a {
+    display: inline-block;
+    text-decoration: none;
+    color: #007bff;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.box a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+}

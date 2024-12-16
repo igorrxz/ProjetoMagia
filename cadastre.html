@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/cadastre.css">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <title> Cadastro | Projeto Magia </title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="/img/LogoProjetoMagiaSemFundo.png" alt="Logo">
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="cadastre.html">CADASTRE SUA CRIANÇA</a></li>
+            <li><a href="queroAjudar.html">DOAÇÕES</a></li>
+            <li><a href="#quem-somos">QUEM SOMOS</a></li>
+            <li><a href="amigos.html">AMIGOS</a></li>
+        </ul>
+        <div class="buttons">
+          <button class="btn btn-donate">QUERO DOAR</button>
+          <button class="btn btn-sponsor">QUERO PATROCINAR</button>
+        </div>
+      </nav>
+    <main>
+    <h1>CADASTRE SUA CRIANÇA!</h1>
+
+    <form autocomplete="off" method="POST">
+        <div id="about-parents">
+            <h2>SOBRE OS PAIS</h2>
+    <label for="name">Nome completo (Responsavel pela Inscrição)<span class="required-symbol">*</span></label>
+    <input id="name" name="name" type="text" placeholder="Nome" required>
+
+    <label for="email">Gmail (Reponsavel pela Insrição)<span class="required-symbol">*</span></label>
+    <input id="email" name="email" type="text" placeholder="e-mail" required>
+
+    <label for="parent-rg">Insira o seu RG<span class="required-symbol">*</span></label>
+    <input id="parent-rg" name="parent-rg" id="parent-rg" placeholder="RG" type="text" required>
+
+    <label for="parent-cpf">Insira o seu CPF<span class="required-symbol">*</span></label>
+    <input id="parent-cpf" name="parent-cpf" id="parent-cpf"  placeholder="CPF" type="text" maxlength="11" minlength="11" required>
+
+    <label for="parent-document">Documento do responsável (CPF, RG ou CNH)<span class="required-symbol">*</span></label>
+    <input id="parent-document" name="parent-document" id="parent-document" type="file" required>
+</div>
+
+    <div id="about-the-kid">
+<h2>SOBRE A CRIANÇA:</h2>
+<label for="name-child">Nome completo da criança<span class="required-symbol">*</span></label>
+<input id="name-child" name="name-child" type="text" required>
+
+<label for="birthday">Data de nascimento<span class="required-symbol">*</span></label>
+<input id="birthday" name="birthday" type="date" required>
+
+<label for="rg">RG da criança<span class="required-symbol">*</span></label>
+<input id="rg" name="rg" type="text" required>
+
+<label for="CPF">CPF da criança:<span class="required-symbol">*</span></label>
+<input id="CPF" name="CPF" type="text" required>
+
+<h2>Anexe o CPF ou RG da criança</h2>
+<label for="photo-rg">RG da criança<span class="required-symbol">*</span></label>
+<input id="photo-rg" name="photo-rg" type="file" required>
+
+<label for="photo-rg">CPF da criança<span class="required-symbol">*</span></label>
+<input id="photo-cpf" name="photo-cpf" type="file" required>
+</div>
+
+<div id="family">
+<h2>DADOS CADASTRAIS DA FAMÍLIA</h2>
+    <label for="adress">Endereco<span class="required-symbol">*</span></label>
+    <input id="adress" name="adress" type="text" required>
+
+    <label for="adress-number">Numero<span class="required-symbol">*</span></label>
+    <input id="adress-number" id="adress-number" type="number" required>
+
+    <label for="complement">Complemento</label>
+    <input id="complement" name="complement" id="complement" type="text" required>
+
+    <label for="neighborhood">Bairro<span class="required-symbol">*</span></label>
+    <input id="neighborhood" name="neighborhood" type="text" required>
+
+    <label for="CEP">CEP<span class="required-symbol">*</span></label>
+    <input id="CEP" name="CEP" type="text" required maxlength="8" required>
+   
+    <fieldset>
+        <legend>Renda Familiar Mensal<span class="required-symbol">*</span></legend>
+    <input type="radio" name="salary-family" id="nosalary"> <label for="nosalary" value="1">Sem renda</label>
+    <input type="radio" name="salary-family" id="1salary"><label for="1salary" value="2">Até 1 salário mínimo</label>
+    <input type="radio" name="salary-family" id="1-3-salary"><label for="1-3-salary" value="3">De 1 a 3 salário mínimos</label>
+    <input type="radio" name="salary-family" id="3-6-salaries"><label for="3-6-salaries" value="4">De 3 a 6 salários mínimos</label>
+    <input type="radio" name="salary-family" id="6-above"><label for="6-above" value="5">De 6 ou mais salários mínimos</label>
+    </fieldset>
+</div>
+
+<div id="child-gift">
+    <label for="present"><span class="highlight-label">Insira aqui o presente desejado pela criança!</span><span class="required-symbol">*</span></label>
+    <input id="present" type="text">
+</div>
+
+    <fieldset>
+        <legend>Autorizações </legend>
+        <input type="checkbox" id="agree">
+        <label for="agree">Aceito que o time da <span class="highlight-text">Projeto Magia</span> entre em contato por e-mail ou telefone para coleta de mais informações.</label>    
+    </fieldset>
+ 
+    <button type="submit">Enviar</button>
+</form>
+
+</main>
+</body>
+</html>
