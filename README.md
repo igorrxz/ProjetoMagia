@@ -1,6 +1,6 @@
-# Magia das Datas
+# Projeto Magia
 
-O **Magia das Datas** é um projeto de incentivo para "apadrinhar" crianças em datas comemorativas, como **Natal**, **Páscoa** e **Dia das Crianças**. Nosso objetivo é tornar essas datas especiais para crianças carentes, oferecendo presentes e alegria, através de parcerias com escolas e comunidades.
+O **Projeto Magia** é um projeto de incentivo para "apadrinhar" crianças em datas comemorativas, como **Natal**, **Páscoa** e **Dia das Crianças**. Nosso objetivo é tornar essas datas especiais para crianças carentes, oferecendo presentes e alegria, através de parcerias com escolas e comunidades.
 
 ## Como Funciona
 
